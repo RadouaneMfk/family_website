@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع عائلة آل زهران</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- البانر الرئيسي -->
+    <header class="header">
+        <div class="header-content">
+            <h1>عائلة موافق</h1>
+            <p>من قرية العيون - تراثنا هويتنا</p>
+        </div>
+    </header>
+
+    <!-- شريط التنقل -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home"><i class="fas fa-home"></i> الرئيسية</a></li>
+            <li><a href="#about"><i class="fas fa-history"></i> عن العائلة</a></li>
+            <li><a href="#gallery"><i class="fas fa-camera"></i> مكتبة الصور</a></li>
+            <li><a href="#events"><i class="fas fa-calendar-alt"></i> الفعاليات</a></li>
+            <li><a href="#contact"><i class="fas fa-envelope"></i> اتصل بنا</a></li>
+        </ul>
+    </nav>
+
+    <!-- المحتوى الرئيسي -->
+    <main>
+        <section id="home" class="section">
+            <h2>مرحباً بكم في موقع عائلة موافق</h2>
+            <div class="welcome-content">
+                <img src="https://images.unsplash.com/photo-1517457210348-703079e57d4b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="صورة العائلة" class="family-main-img">
+                <p>تأسس هذا الموقع عام 2023 بهدف توثيق تاريخ عائلة آل زهران الكريمة التي تعود جذورها إلى أكثر من 200 عام في قرية العيون. نحتفظ هنا بذاكرتنا الجميلة ونتشارك أحداثنا الحالية.</p>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <h2>عن العائلة</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>جذورنا</h3>
+                    <p>يعود أصل العائلة إلى الجد الأكبر زهران بن محمد الذي استقر في قرية العيون عام 1820. اشتهرت العائلة بالزراعة والتجارة، وكان لها دور بارز في تطوير القرية.</p>
+                    
+                    <h3>قيمنا</h3>
+                    <ul>
+                        <li>التكافل الاجتماعي بين أفراد العائلة</li>
+                        <li>الحفاظ على التراث والعادات الأصيلة</li>
+                        <li>دعم التعليم والتنمية</li>
+                    </ul>
+                </div>
+                <img src="https://images.unsplash.com/photo-1470115636492-6d2b56f9146d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="صورة قديمة للعائلة" class="about-img">
+            </div>
+        </section>
+
+        <section id="gallery" class="section">
+            <h2>مكتبة الصور</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="حفل زفاف">
+                    <p>زفاف عبدالله ومريم - 2022</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="لقاء عائلي">
+                    <p>اللقاء السنوي للعائلة - 2023</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1470115636492-6d2b56f9146d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80
+                    " alt="القرية">
+                    <p>منظر عام لقرية العيون</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="events" class="section">
+            <h2>الفعاليات القادمة</h2>
+            <div class="events-container">
+                <div class="event-card">
+                    <h3>اللقاء السنوي</h3>
+                    <p><i class="far fa-calendar"></i> 15 أغسطس 2023</p>
+                    <p><i class="fas fa-map-marker-alt"></i> منتزه العيون</p>
+                </div>
+                <div class="event-card">
+                    <h3>حفل تخريج</h3>
+                    <p><i class="far fa-calendar"></i> 1 سبتمبر 2023</p>
+                    <p><i class="fas fa-map-marker-alt"></i> قاعة المؤتمرات</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <h2>اتصل بنا</h2>
+            <form class="contact-form">
+                <input type="text" placeholder="اسمك الكريم" required>
+                <input type="email" placeholder="بريدك الإلكتروني" required>
+                <textarea placeholder="رسالتك" rows="5" required></textarea>
+                <button type="submit">إرسال <i class="fas fa-paper-plane"></i></button>
+            </form>
+        </section>
+    </main>
+
+    <!-- تذييل الصفحة -->
+    <footer class="footer">
+        <div class="social-links">
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>© 2023 رضوان موافق</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
