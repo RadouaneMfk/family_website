@@ -1,0 +1,360 @@
+/* التنسيقات العامة */
+body {
+    font-family: 'Tajawal', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* البانر الرئيسي */
+.header {
+    background: linear-gradient(rgba(44, 94, 146, 0.8), rgba(44, 94, 146, 0.9)), 
+                url('images/family-banner.jpg') center/cover;
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+    position: relative;
+}
+
+.header h1 {
+    font-size: 3.5rem;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.header p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+/* شريط التنقل */
+.navbar {
+    background-color: #2C5E92;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.navbar a:hover {
+    color: #E4B363;
+    transform: translateY(-2px);
+}
+
+.navbar a i {
+    font-size: 1.2rem;
+}
+
+/* الأقسام */
+.section {
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section h2 {
+    color: #2C5E92;
+    border-bottom: 2px solid #E4B363;
+    padding-bottom: 10px;
+    display: inline-block;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+/* الصفحة الرئيسية */
+.welcome-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.family-main-img {
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.welcome-content p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+/* عن العائلة */
+.about-content {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h3 {
+    color: #1a3a5a;
+    margin-top: 25px;
+}
+
+.about-text ul {
+    padding-right: 20px;
+}
+
+.about-text li {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.about-text li::before {
+    content: "•";
+    color: #E4B363;
+    font-size: 1.5rem;
+    position: absolute;
+    right: -20px;
+    top: -5px;
+}
+
+.about-img {
+    width: 40%;
+    border-radius: 10px;
+    border: 5px solid white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* شجرة العائلة */
+.tree-container {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.tree-img {
+    width: 60%;
+    border-radius: 5px;
+}
+
+.tree-info {
+    flex: 1;
+}
+
+.tree-info p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.view-button {
+    background-color: #2C5E92;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-family: 'Tajawal', sans-serif;
+}
+
+.view-button:hover {
+    background-color: #1a3a5a;
+    transform: translateY(-2px);
+}
+
+/* معرض الصور */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.gallery-item {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s;
+}
+
+.gallery-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.gallery-item p {
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    margin: 0;
+    color: #2C5E92;
+}
+
+/* الفعاليات */
+.events-container {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.event-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px;
+    flex: 1;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.event-card h3 {
+    color: #2C5E92;
+    margin-top: 0;
+}
+
+.event-card p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #555;
+}
+
+.event-card i {
+    color: #E4B363;
+}
+
+/* نموذج الاتصال */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: 'Tajawal', sans-serif;
+    font-size: 1rem;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form button {
+    background-color: #2C5E92;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-family: 'Tajawal', sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 auto;
+}
+
+.contact-form button:hover {
+    background-color: #1a3a5a;
+    transform: translateY(-2px);
+}
+
+/* التذييل */
+.footer {
+    background-color: #2C5E92;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px;
+}
+
+.social-links {
+    margin-bottom: 20px;
+}
+
+.social-links a {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 15px;
+    transition: all 0.3s;
+    display: inline-block;
+}
+
+.social-links a:hover {
+    color: #E4B363;
+    transform: translateY(-5px);
+}
+
+/* التصميم المتجاوب */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar li {
+        margin: 5px 0;
+    }
+
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .welcome-content,
+    .about-content,
+    .tree-container {
+        flex-direction: column;
+    }
+
+    .family-main-img,
+    .about-img,
+    .tree-img {
+        width: 100%;
+    }
+
+    .events-container {
+        flex-direction: column;
+    }
+}
